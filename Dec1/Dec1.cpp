@@ -6,6 +6,7 @@
 #include <math.h>
 #include <set>
 #include <unordered_map>
+#include "../utils/Split.h"
 
 // Part 1
 void calculateDistance(std::vector<int> &lListVector, std::vector<int> &rListVector)
@@ -53,36 +54,6 @@ void calculateSimilarityPoints(std::vector<int> &lListVector, std::vector<int> &
     }
 
     std::cout << "Similarity Points: " << similarityPoints << '\n';
-}
-
-void getStringsSplitBySpaces(const std::string &str, std::vector<std::string> &splitUpStringArr)
-{
-    std::string word;
-
-    for (int i = 0; i < str.size(); i++)
-    {
-        if (str[i] == '\n')
-            break;
-
-        if (str[i] == ' ')
-        {
-            if (!word.empty())
-            {
-                splitUpStringArr.push_back(word);
-                word.clear();
-            }
-        }
-        else
-        {
-            word += str[i];
-        }
-    }
-
-    if (!word.empty())
-    {
-        splitUpStringArr.push_back(word);
-        word.clear();
-    }
 }
 
 int main(int argc, char *argv[])
