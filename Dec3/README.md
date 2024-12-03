@@ -13,7 +13,7 @@ which will calculate number of safe reports
 or
 
 ```bash
-dec2.exe <inputfile.extension> --with-damper
+dec2.exe <inputfile.extension> --with-conditional
 ```
 
 which will calculate number of safe reports, accepting one faulty level
