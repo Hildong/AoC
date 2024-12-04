@@ -5,17 +5,17 @@
 In your terminal, you can enter either
 
 ```bash
-dec2.exe <inputfile.extension>
+dec3.exe <inputfile.extension>
 ```
 
-which will calculate number of safe reports
+which will run all mul(x, y) calls from input file
 
 or
 
 ```bash
-dec2.exe <inputfile.extension> --with-damper
+dec3.exe <inputfile.extension> --with-conditional
 ```
 
-which will calculate number of safe reports, accepting one faulty level
+which will run all mul(x, y) calls from input file with the conditional do() and don't() in input file
 
 <i>Note: I don't like the solution during character reading at all, should refactor with less conditionals after eachother. Perhaps refactor pieces into helper functions.</i>
