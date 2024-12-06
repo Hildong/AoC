@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
     if (argc < 2 || argc > 3)
     {
         std::cout << argc << '\n';
-        std::cout << "Usage: ./Dec6 <input_file> [OPTIONS=--with-conditional]\n";
+        std::cout << "Usage: ./Dec6 <input_file>\n";
         return 1;
     }
 
